@@ -1,0 +1,33 @@
+.nav {
+    width: 480px;
+    margin: 0px 215px 0px;
+    transition: all 1000ms;
+    z-index: 0;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    .nav {
+        height: 0px;
+        position: absolute;
+        left: -400px;
+        top: 100%;
+        width: 200%;
+        background-color: rgb(36, 36, 39);
+        overflow: hidden;
+        transition: all 250ms;
+    }
+    .nav-container {
+        flex-direction: column;
+        margin-left: 300px;
+    }
+}
+
+.menu-open {
+    height: 180px;
+}

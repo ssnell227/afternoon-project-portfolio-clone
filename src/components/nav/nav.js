@@ -1,17 +1,20 @@
 import React from 'react'
 import Button from '../button/button'
 
-function Header (props) {
+import './nav.css'
+
+function Nav (props) {
     return (
-        <div>
-            <img></img>
-            <Button className='nav-button' name={'SERVICES'}/>
-            <Button className='nav-button' name={'PORTFOLIO'} />
-            <Button className='nav-button' name={'ABOUT'}/>
-            <Button className='nav-button' name={'TEAM'} />
-            <Button className='nav-button' name={'CONTACT'}/>
+        <div className={`nav ${props.toggleClass}`}>
+            <div className='nav-container'>
+            <Button buttonClass='nav-button' name={'SERVICES'}/>
+            <Button buttonClass='nav-button' name={'PORTFOLIO'} />
+            <Button buttonClass='nav-button' name={'ABOUT'}/>
+            <Button buttonClass='nav-button' name={'TEAM'} />
+            <Button buttonClass='nav-button' name={'CONTACT'}/>
+            </div>
         </div>
     )
 }
 
-export default Header
+export default Nav

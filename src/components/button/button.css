@@ -1,0 +1,50 @@
+.banner-button {
+    width: 224px;
+    height: 70px;
+
+    background-color: #FED136;
+    
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 5px;
+}
+
+.nav-button {
+    padding: 8px;
+
+    background-color: transparent;
+    border: none;
+
+    color: white;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    color: #FED136;
+}
+
+.menu-button {
+    width: 80px;
+    height: 35px;
+    background-color: #FED136;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .menu-button {
+        display: block;
+
+        position: absolute;
+        right: 20px;
+    }
+}
